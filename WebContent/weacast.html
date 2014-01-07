@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WeaCast</title>
+		<meta charset="utf-8" name="dailyweatherdetails" content="Provides hourly details of any city of the world and shows details in elegant way.">
+		<script data-main="js/weacastcontroller" src="js/require.js"></script>
+		<!-- Bootstrap core CSS -->
+    		<link href="css/bootstrap.css" rel="stylesheet">
+
+    	<!-- Add custom CSS here -->
+    	<link href="css/modern-business.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="stylesheets/weacaststylesheets.css" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ribeye">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />	
+		<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+		
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="icon" style="display:inline">
+    			<img src="img/icon1.jpg" width="40" height="50" style="position:absolute; left:0px; z-index:-1"> 
+    		</div>  
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand" href="index.html">Weacast</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="home" class="active"><a href="weacast.html">Home</a></li>
+            <li id="locate"><a href="services.html">Locate</a></li>
+			<li id="chart"><a href="DynamicTempChart.html">Chart</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+		<div id="container">
+			<div id="header">
+				<!--<label for="placeSearch">Enter Location:</label> -->
+				<input type="search" name="placeSearch" autocomplete="off" id="searchCities" placeholder= "Enter City Name" autofocus>
+				<div  id="options"></div>
+			</div>
+			<div id="contenttableContainer">
+				<div id="tableRow">
+					<div id="information">
+						<div id="Citytitle"> Current City</div>
+						<span id="CityDateTime" style="font-size:small;padding: 10px;margin-bottom: 50px"></span>
+						
+						<!-- Add image and temperature -->
+						<div class="CityTemperature">
+							<!--<img id="WeatherImage" src="" width="150" height="150" alt="">-->
+							<canvas id="icon1" width="150" height="150"></canvas>
+							<div class="TempDetails">
+								<div class="text-1" id="Temperature">25</div>
+								<div id="Condition">Clear</div>
+							</div>
+						</div>
+						<!-- Weather Temperatur table -->
+						
+					<table class="table-1">
+						<tbody>
+						<tr>
+							<td>Temp C:</td>
+							<td id="tempc">S 10 mph </td>
+						</tr>
+						<tr class="bg-1">
+							<td>Wind:</td>
+							<td id="wind">S 10 mph </td>
+						</tr>
+						<tr >
+							<td>Wind Direction:</td>
+							<td id="winddir">S 10 mph </td>
+						</tr>
+						<tr  class="bg-1">
+							<td>Barometer:</td>
+							<td id="pressure">30.03" Hg</td>
+						</tr>
+						<tr >
+							<td>Sunrise:</td>
+							<td id="sunrise">6:31 AM</td>
+						</tr>
+						<tr class="bg-1">
+							<td>Sunset:</td>
+							<td id="sunset">8:52 PM</td>
+						</tr>
+						
+						</tbody>
+					</table>
+						
+					
+					
+					</div>
+					<div id="location">
+					<p id="locationtitle"> My Cities</p>
+						<div style="border: 1px solid black" id="showPlacesDiv">
+							<input type="button" class="btnplace" name="addPlacesButton" value="Add" id="addCities" autofocus>
+							<input type="button" class="btnplace" name="addPlacesButton" value="Edit" id="editCities" autofocus>
+							<input type="button" class="btnplace" name="done" value="Done" id="doneCities" autofocus>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hourlybutton" class="hideslide">
+			
+			</div>
+			<footer>
+				<hr>
+					Copyright &copy; CMPE 297, Computer Engineering Department.San Jose State University 2013	
+  			</footer><!-- /.container -->
+				
+		<!--<div id="search">
+		<label for="placeSearch">Search</label>
+		<input type="text" name="placeSearch" autocomplete="off" id="searchCities" autofocus>
+		
+		<div  id="options">
+		
+		</div>
+		</div>
+		<div id="showDetails">
+		
+		</div>
+		<div style="border: 1px solid black" id="showPlacesDiv">
+			<input type="button" name="addPlacesButton" value="+" id="addCities" autofocus>
+			<input type="button" name="addPlacesButton" value="Edit" id="editCities" autofocus>
+			<input type="button" name="done" value="Done" id="doneCities" autofocus>
+		</div>-->
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22473" started-at="2013-12-05T04:32:35Z" finished-at="2013-12-05T04:32:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22473" started-at="2013-12-05T04:32:35Z" finished-at="2013-12-05T04:32:58Z">
+      <class name="selenium.test.WeacastFlow">
+        <test-method status="PASS" signature="setup()[pri:0, instance:selenium.test.WeacastFlow@6e1f8f]" name="setup" is-config="true" duration-ms="3619" started-at="2013-12-04T20:32:35Z" finished-at="2013-12-04T20:32:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checktemp()[pri:0, instance:selenium.test.WeacastFlow@6e1f8f]" name="checktemp" duration-ms="18828" started-at="2013-12-04T20:32:39Z" finished-at="2013-12-04T20:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checktemp -->
+      </class> <!-- selenium.test.WeacastFlow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
